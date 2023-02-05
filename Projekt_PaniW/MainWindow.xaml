@@ -1,0 +1,72 @@
+﻿<Window x:Class="Projekt_PaniW.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt_PaniW"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel x:Name="App">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Plik">
+
+                <MenuItem  Header="Zapis do pliku" Click="Zapisz"/>
+                <MenuItem Header="Nowy " Click="Nowe_Okno"/>
+                <MenuItem Header="Oblicz" Click="Oblicz"/>
+            </MenuItem>
+            
+            
+          
+            <MenuItem Header="Widok">
+                <MenuItem Header="kolor" Click="Zmien_kolor">
+                    <MenuItem Header="zielony" Click="Zielony"></MenuItem>
+                    <MenuItem Header="niebieski" Click="Niebieski"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="czcionka" Click="Zmien_czcionke">
+                    <MenuItem Header="mała" Click="mala"></MenuItem>
+                    <MenuItem Header="duża" Click="duza"></MenuItem>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Pomoc">
+                <MenuItem Header="O programie" Click="Oprogramie"></MenuItem>
+                <MenuItem Header="Instrukcja" Click="Instrukcja"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <TextBlock DockPanel.Dock="Top">Podaj tekst poniżej</TextBlock>
+        <TextBox x:Name="tekstDoZapisu" TextWrapping="Wrap" AcceptsReturn="True">
+            
+        </TextBox>
+        
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!--Column - wiersz (poziommo)-->
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!--Row kolumna (pionowo)-->
+            <TextBlock>
+            Wpisz pierwszą liczbę
+            </TextBlock>
+            <TextBlock Grid.Row="1"><!--W textBlock wpisuje się TextBox-->
+            Wpisz drugą liczbę
+            </TextBlock>
+            <TextBox Grid.Column="1" x:Name="liczba1"/>
+            <!--textBox do wpisywania-->
+            <TextBox Grid.Column="1" Grid.Row="1"  x:Name="liczba2"/>
+            <Button Grid.Row="2" Grid.ColumnSpan="2" 
+                    HorizontalAlignment="Center"
+                VerticalAlignment="Center" Click="NWD"> NWD</Button>
+
+            <Button Grid.Row="2" Grid.ColumnSpan="1" 
+                    HorizontalAlignment="Center"
+                VerticalAlignment="Center" Click="NWW"> NWW</Button>
+        </Grid>
+        <!--Zapis do pliku-->
+    </DockPanel>
+</Window>
