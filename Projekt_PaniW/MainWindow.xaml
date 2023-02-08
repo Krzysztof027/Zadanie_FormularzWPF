@@ -18,7 +18,7 @@
             
           
             <MenuItem Header="Widok">
-                <MenuItem Header="kolor" Click="Zmien_kolor">
+                <MenuItem Header="kolor" >
                     <MenuItem Header="zielony" Click="Zielony"></MenuItem>
                     <MenuItem Header="niebieski" Click="Niebieski"></MenuItem>
                 </MenuItem>
@@ -33,7 +33,7 @@
             </MenuItem>
         </Menu>
         <TextBlock DockPanel.Dock="Top">Podaj tekst poniżej</TextBlock>
-        <TextBox x:Name="tekstDoZapisu" TextWrapping="Wrap" AcceptsReturn="True">
+        <TextBox x:Name="tekstDoZapisu" Width="200" Height="400" TextWrapping="Wrap" AcceptsReturn="True">
             
         </TextBox>
         

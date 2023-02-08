@@ -25,6 +25,8 @@ namespace Projekt_PaniW
     public partial class MainWindow : Window
     {
         private const int V = 14;
+        private string path;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -48,25 +50,24 @@ namespace Projekt_PaniW
 
         private void Nowe_Okno(object sender, RoutedEventArgs e)
         {
-
+            //File.CreateText(path).Dispose();
+            liczba1.Clear();
+            liczba2.Clear();
         }
 
         private void Oblicz(object sender, RoutedEventArgs e)
         {
-
+            if (int.TryParse(liczba1.Text, out int a) && int.TryParse(liczba2.Text, out int b))
+            {
+                int wynik1 = NWD(a, b);
+                int wynik2 = nww(a, b);
+                MessageBox.Show("Największy wspólny dzielnik i Największa wspólna wielokrotność liczb " + a + " i " + b + " wynosi: NWD -> " + wynik1 + " / " + wynik2 + "<-NWW", "NWD / NWW", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
-
-        private void Zmien_kolor(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
         private void Zmien_czcionke(System.Object sender, System.EventArgs e)
         {
 
         }
-
-
         private void Oprogramie(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Wersja programu 6.0 Autor: Krzysztof Szczerkowski");
@@ -137,13 +138,15 @@ namespace Projekt_PaniW
 
         private void mala(object sender, RoutedEventArgs e)
         {
-            liczba1.FontSize = 12;
-            liczba2.FontSize = 12;
+            liczba1.FontSize = 14;
+            liczba2.FontSize = 14;
         }
 
         private void duza(object sender, RoutedEventArgs e)
         {
-
+            liczba1.FontSize = 24;
+            liczba2.FontSize = 24;
+            
         }
     }
 }
