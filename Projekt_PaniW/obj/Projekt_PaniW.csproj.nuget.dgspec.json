@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\pulpit\\Zadanie_J3_C#\\Projekt_PaniW\\Projekt_PaniW\\Projekt_PaniW.csproj": {}
+    "C:\\Users\\Krzysztof\\source\\repos\\Zadanie_C-\\Projekt_PaniW\\Projekt_PaniW.csproj": {}
   },
   "projects": {
-    "D:\\pulpit\\Zadanie_J3_C#\\Projekt_PaniW\\Projekt_PaniW\\Projekt_PaniW.csproj": {
+    "C:\\Users\\Krzysztof\\source\\repos\\Zadanie_C-\\Projekt_PaniW\\Projekt_PaniW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pulpit\\Zadanie_J3_C#\\Projekt_PaniW\\Projekt_PaniW\\Projekt_PaniW.csproj",
+        "projectUniqueName": "C:\\Users\\Krzysztof\\source\\repos\\Zadanie_C-\\Projekt_PaniW\\Projekt_PaniW.csproj",
         "projectName": "Projekt_PaniW",
-        "projectPath": "D:\\pulpit\\Zadanie_J3_C#\\Projekt_PaniW\\Projekt_PaniW\\Projekt_PaniW.csproj",
+        "projectPath": "C:\\Users\\Krzysztof\\source\\repos\\Zadanie_C-\\Projekt_PaniW\\Projekt_PaniW.csproj",
         "packagesPath": "C:\\Users\\Krzysztof\\.nuget\\packages\\",
-        "outputPath": "D:\\pulpit\\Zadanie_J3_C#\\Projekt_PaniW\\Projekt_PaniW\\obj\\",
+        "outputPath": "C:\\Users\\Krzysztof\\source\\repos\\Zadanie_C-\\Projekt_PaniW\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
